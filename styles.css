@@ -10,7 +10,7 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 3fr;
   height: 100vh;
   width: 100vw;
@@ -19,16 +19,40 @@ html {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  background-color: lightblue;
+  gap: 50px;
+  background-color: #06b6d4;
+  color: #ecfeff;
   grid-row: 1 / 3;
   padding-top: 25px;
   padding-left: 25px;
+  font-size: 1.5em;
 }
 
 .sidebar ul {
   padding: 0;
   list-style-type: none;
+}
+
+.searchbutton{
+    width: px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.sidebar i {
+  margin-right: 25px;
+}
+
+a {
+  text-shadow: 2px 2px #164e63;
+  text-decoration: none;
+  color: #ecfeff;
+}
+
+.logo h2 {
+  text-shadow: 2px 2px #164e63;
 }
 
 .top {
@@ -40,7 +64,8 @@ html {
   grid-template-columns: 3fr 1fr;
 }
 .navbar {
-  background-color: aquamarine;
+  display: flex;
+  background-color: #ecfeff;
 }
 
 .mainbar {
