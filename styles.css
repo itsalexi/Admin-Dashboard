@@ -16,6 +16,16 @@ html {
   width: 100vw;
 }
 
+.navbar input,
+button {
+  border: none;
+}
+
+.navbar input {
+  background-color: #cffafe;
+  border-radius: 20px;
+  height: 20px;
+}
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -33,8 +43,8 @@ html {
   list-style-type: none;
 }
 
-.searchbutton{
-    width: px;
+.searchbutton {
+  width: px;
 }
 
 li {
@@ -56,20 +66,43 @@ a {
 }
 
 .top {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+
 .navbar {
   display: flex;
   background-color: #ecfeff;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 20px;
+}
+
+.navright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#profileName {
+  font-family: "Patrick Hand", cursive;
+}
+.profile {
+  height: auto;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid black;
 }
 
 .mainbar {
   background-color: blanchedalmond;
+  flex: 1;
 }
 
 .projects {
