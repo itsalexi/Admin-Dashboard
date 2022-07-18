@@ -22,7 +22,7 @@ button {
 }
 
 .navbar input {
-  background-color: #cffafe;
+  background-color: #a5f3fc;
   border-radius: 20px;
   max-width: 700px;
   min-width: 1000px;
@@ -158,24 +158,69 @@ a {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  background-color: #cffafe;
+  background-color: #a5f3fc;
   grid-row: 1 / 3;
-  gap: 20px;
+  gap: 10px;
+  padding-bottom: 50px;
 }
 
 .card {
+  margin-left: 20px;
+  margin-top: 20px;
   width: 500px;
-  height: 300px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  border-left: 20px solid #155e75;
+  border-left: 20px solid orange;
+  background-color: #ecfeff;
+}
+#projectsTitle {
+  grid-column: 1 / 3;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
 }
 
+#annLabel {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.ann {
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #ecfeff;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#annTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#annInfo {
+    color: darkslategray;
+}
+
+.firstann {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+.announcement {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 .announcements {
-  background-color: #cffafe;
+  background-color: #a5f3fc;
 }
 
 .trending {
-  background-color: #cffafe;
+  background-color: #a5f3fc;
 }
