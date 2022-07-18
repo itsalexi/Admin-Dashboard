@@ -11,7 +11,7 @@ html {
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
   height: 100vh;
   width: 100vw;
 }
@@ -24,7 +24,10 @@ button {
 .navbar input {
   background-color: #cffafe;
   border-radius: 20px;
-  height: 20px;
+  max-width: 700px;
+  min-width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  margin-left: 20px;
 }
 .sidebar {
   display: flex;
@@ -79,7 +82,6 @@ a {
   display: flex;
   background-color: #ecfeff;
   justify-content: space-between;
-
   align-items: center;
   padding: 20px;
 }
@@ -88,6 +90,7 @@ a {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-right: 50px;
 }
 
 #profileName {
@@ -100,20 +103,79 @@ a {
   border: 3px solid black;
 }
 
+.bigprofile {
+  height: auto;
+  width: 90px;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-left: 20px;
+}
+
 .mainbar {
-  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  background-color: #ecfeff;
+  height: 50px;
   flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 3px;
+  z-index: 20;
+  padding-bottom: 15px;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-left: 20px;
+}
+
+#helloName {
+  font-size: 30px;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+}
+.mainbuttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  flex: 1.2;
+  margin-right: 50px;
+}
+
+.mainbuttons button {
+  font-family: "Patrick Hand", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #06b6d4;
+  color: white;
+  border-radius: 25px;
+  height: 40px;
+  width: 100px;
+  gap: 10px;
 }
 
 .projects {
-  background-color: bisque;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  background-color: #cffafe;
   grid-row: 1 / 3;
+  gap: 20px;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-left: 20px solid #155e75;
 }
 
 .announcements {
-  background-color: antiquewhite;
+  background-color: #cffafe;
 }
 
 .trending {
-  background-color: cornsilk;
+  background-color: #cffafe;
 }
