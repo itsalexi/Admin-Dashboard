@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: lightblue;
+  grid-row: 1 / 3;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.navbar {
+  background-color: aquamarine;
+}
+
+.mainbar {
+  background-color: blanchedalmond;
+}
+
+.projects {
+  background-color: bisque;
+  grid-row: 1 / 3;
+}
+
+.announcements {
+  background-color: antiquewhite;
+}
+
+.trending {
+  background-color: cornsilk;
+}
