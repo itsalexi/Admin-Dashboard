@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: "Sriracha", cursive;
+  font-family: "Patrick Hand", cursive;
 }
 
 html {
@@ -76,6 +76,8 @@ a {
 .main-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  background-color: #a5f3fc;
 }
 
 .navbar {
@@ -93,9 +95,6 @@ a {
   margin-right: 50px;
 }
 
-#profileName {
-  font-family: "Patrick Hand", cursive;
-}
 .profile {
   height: auto;
   width: 30px;
@@ -109,6 +108,8 @@ a {
   border-radius: 50%;
   border: 3px solid black;
   margin-left: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .mainbar {
@@ -133,7 +134,8 @@ a {
 #helloName {
   font-size: 30px;
   font-family: "Patrick Hand", cursive;
-  font-weight: 400;
+  font-weight: 500;
+  text-shadow: 2px 2px #67e8f9;
 }
 .mainbuttons {
   display: flex;
@@ -153,12 +155,15 @@ a {
   height: 40px;
   width: 100px;
   gap: 10px;
+  text-shadow: 2px 2px #164e63;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 3px;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   background-color: #a5f3fc;
+  grid-template-rows: 0.2fr;
   grid-row: 1 / 3;
   gap: 10px;
   padding-bottom: 50px;
@@ -176,51 +181,95 @@ a {
   background-color: #ecfeff;
 }
 #projectsTitle {
-  grid-column: 1 / 3;
-  margin-left: 20px;
-  margin-top: 20px;
+  grid-column: 1 / -1;
   font-weight: bold;
   font-size: 30px;
+  text-shadow: 2px 2px #36aaba;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 #annLabel {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+  text-shadow: 2px 2px #36aaba;
 }
 
 .ann {
-    margin-right: 50px;
-    margin-top: 50px;
-    padding: 30px;
-    background-color: #ecfeff;
-    border-radius: 20px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  margin-right: 50px;
+  margin-top: 30px;
+  padding: 30px;
+  padding-bottom: 50px;
+  background-color: #ecfeff;
+  border-radius: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 #annTitle {
-    font-size: 25px;
-    font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #annInfo {
-    color: darkslategray;
+  color: darkslategray;
 }
 
 .firstann {
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
 }
 .announcement {
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-    padding-top: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .announcements {
+  display: grid;
   background-color: #a5f3fc;
+  grid-template-rows: 0.2fr 3fr;
 }
 
 .trending {
   background-color: #a5f3fc;
+  display: grid;
+  grid-template-rows: 0.2fr 3fr;
+}
+
+.trends {
+  background-color: #ecfeff;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+  margin-right: 50px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.profileDiv {
+  display: grid;
+  grid-template-columns: 0.7fr 2fr;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.trendingdesc,
+.trendingname {
+  margin-left: 15px;
+}
+
+.trendingname {
+  font-size: 30px;
+}
+
+.trendingdesc {
+  color: darkslategray;
+}
+
+#trendingpfp {
+  grid-row: 1 / 3;
+  height: 64px;
+  width: 64px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
