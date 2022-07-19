@@ -28,6 +28,7 @@ button {
   min-width: 1000px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   margin-left: 20px;
+  
 }
 .sidebar {
   display: flex;
@@ -127,7 +128,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
   margin-left: 30px;
 }
 
@@ -136,6 +136,12 @@ a {
   font-family: "Patrick Hand", cursive;
   font-weight: 500;
   text-shadow: 2px 2px #67e8f9;
+}
+
+#hellotop {
+  text-shadow: 2px 2px #67e8f9;
+  font-weight: 500;
+  font-size: 20px;
 }
 .mainbuttons {
   display: flex;
@@ -182,6 +188,16 @@ a {
   grid-template-rows: 3fr 1fr;
 }
 
+button:hover {
+  transform: scale(1.2);
+  transition: all 0.1s;
+}
+
+.card:hover,
+.hovereffect:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
+}
 .cardbuttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -203,13 +219,13 @@ a {
   font-size: 20px;
 }
 
-#cardbuttons {
+button {
+  background: none;
 }
 #projectsTitle {
   grid-column: 1 / -1;
   font-weight: bold;
   font-size: 30px;
-  text-shadow: 2px 2px #36aaba;
   margin-left: 20px;
   margin-top: 20px;
 }
@@ -218,7 +234,6 @@ a {
   font-weight: bold;
   font-size: 30px;
   margin-top: 20px;
-  text-shadow: 2px 2px #36aaba;
 }
 
 .ann {
