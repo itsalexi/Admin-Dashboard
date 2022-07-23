@@ -12,6 +12,8 @@ An admin dashboard layout built in HTML and CSS to practice making grid layouts 
 - HTML
 - CSS
 
+## Live version
+[Check it out, live on Github Pages!](https://itsalexi.github.io/Admin-Dashboard)
 
 ## Acknowledgements
 
